@@ -10,7 +10,7 @@ namespace CraftingTablePrototype.GameElements
     /// <summary>
     /// A csempe osztály egy lerakható, a felhasználó számára testre szabható sokszöget hoz létre, amik automatikusan egymás oldalaihoz illeszkednek, így akár játékmezőknek is felhasználhatóak, és ez volt az egyik nagyobb oka annak, amiért nem hoztunk létre egy játékmező osztályt. Implementálja az IDrawable és IColourable interfészeket.
     /// </summary>
-    public abstract class Tile : IColourable, IDrawable
+    public abstract class Tile : GameObject, IColourable, IDrawable
     {
 
         public byte[,,] Color { get; set; }
@@ -20,7 +20,7 @@ namespace CraftingTablePrototype.GameElements
             throw new NotImplementedException();
         }
 
-        public void Draw(float scale)
+        public virtual void Draw(float scale)
         {
             throw new NotImplementedException();
         }
