@@ -19,11 +19,6 @@ namespace CraftingTablePrototype.GameElements
             throw new NotImplementedException();
         }
 
-        public virtual void Draw(float scale)
-        {
-            throw new NotImplementedException();
-        }
-
         public virtual int RandNumGen(int lowerBoundary, int upperBoundary)
         {
             throw new NotImplementedException();
@@ -47,7 +42,7 @@ namespace CraftingTablePrototype.GameElements
         /// <summary>
         /// Elment egy kártyát a pakliba.
         /// </summary>
-        public abstract void SaveToDeck(int tecNumberk);
+        public abstract void SaveToDeck(int deckNumber);
 
 
         /// <summary>
@@ -65,6 +60,11 @@ namespace CraftingTablePrototype.GameElements
         /// </summary>
         /// <param name="newType"></param>
         public abstract void ChangeCardType(string newType);
+
+        public virtual void Draw(float scale)
+        {
+            throw new NotImplementedException();
+        }
 
         /// <summary>
         /// Ezek az előre meghatározott kártyasémák

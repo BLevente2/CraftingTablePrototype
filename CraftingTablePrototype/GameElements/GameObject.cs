@@ -10,7 +10,7 @@ namespace CraftingTablePrototype.GameElements
     /// Ez az absztrakt osztály, azon bázisosztály, amelyből a többi játékelem osztályok öröklik a tulajdonságaikat és metódusaikat.
     /// </summary>
     /// <remarks>
-    /// Ez ténlyeg absztrakt osztály lesz.
+    /// Ez tényleg absztrakt osztály lesz.
     /// </remarks>
     public abstract class GameObject
     {
